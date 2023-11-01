@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lato:wght@100&family=Montserrat:wght@500;700&family=Phudu:wght@300;400;500;600&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <main class="container" id="main">
+    <div class="image"></div>
+    <div class="content">
+        <h1 class="titulo">Stay updated!</h1>
+        <p class="descripcion">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="lista">
+          <li class="primero">
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="primero">
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li class="primero">
+              <span>And much more!</span>
+          </li>
+        </ul>
+      <form class="email">
+        <div class="email_label">
+        <label for="email">Email address</label>
+        <span>Valid email required</span>
+      </div>
+        <input type="email" id="user_email" value="" placeholder="email@company.com">
+        <button id="Sus" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </main>
+<!--Mensaje de confirmacion-->
+<div id="main_success">
+<div class="page_success">
+  <div class="contenido_mensaje">
+  <img class="mensaje_sus" src="assets/images/icon-success.svg">
+  <h2>Thanks for subscribing!</h2>
+  <p>A confirmation email has been sent to ash@loremcompany.com.
+  Please open it and click the button inside to confirm your subscription.</p>
+  <div class="mensaje_btn">
+  <button id="mensaje_btn" type="submit" > Dismiss message </button>
+  </div>
+</div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
